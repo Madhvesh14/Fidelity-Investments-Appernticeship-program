@@ -2,26 +2,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Category cat = new Category();
-        cat.productID=111;
-        cat.productName="Laptop";
-        cat.productPrice=90000;
-        cat.CategoryID=1;
-        cat.CategoryName="Electronics";
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        cat.Display();
-
-        Brand brand = new Brand();
-        brand.productID=111;
-        brand.productName="Laptop";
-        brand.productPrice=90000;
-        brand.CategoryID=1;
-        brand.CategoryName="Electronics";
-        brand.BrandName="HP";
-
-        brand.Display();
-
-
-
+        for (int i = 1; i <= 5; i++) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.println("i = " + i);
+        }
     }
 }
