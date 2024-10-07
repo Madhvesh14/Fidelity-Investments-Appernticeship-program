@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="range"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+        .success-message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AC Maintenance Service</h1>
+    <form id="acMaintenanceForm">
+        <div class="form-group">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="tel" id="mobileNumber" placeholder="Enter your mobile number" pattern="^[789]\d{9}$" required>
+        </div>
+
+        <div class="form-group">
+            <label for="emailid">Email ID</label>
+            <input type="email" id="emailid" placeholder="Enter your email Id" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" rows="5" cols="25" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="acTypes">AC Type</label>
+            <input list="acTypes" id="acType" required>
+            <datalist id="acTypes">
+                <option value="Split">
+                <option value="Window">
+                <option value="Centralized">
+                <option value="Portable">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="ServiceType">Service Type</label>
+            <select id="ServiceType" required>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Repair">Repair</option>
+                <option value="Gas Refill">Gas Refill</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dateforAppointment">Date for Appointment</label>
+            <input type="date" id="dateforAppointment" required>
+        </div>
+
+        <div class="form-group">
+            <label for="yearlyMaintenance">Yearly Maintenance</label>
+            <input type="checkbox" id="yearlyMaintenance" value="Yes">
+            <label for="yearlyMaintenance">Select if required</label>
+        </div>
+
+        <div class="form-group">
+            <label for="Duration">Duration in months from the previous service</label>
+            <input type="range" id="Duration" min="0" max="6" step="1" title="0 to 6 Months" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" id="Submit" value="Submit">
+            <input type="reset" id="reset" value="Clear">
+        </div>
+    </form>
+
+    <div class="success-message" id="successMessage" style="display:none;">Form submitted successfully!</div>
+
+    <script>
+        document.getElementById('acMaintenanceForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
