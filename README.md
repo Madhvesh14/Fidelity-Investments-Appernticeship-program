@@ -1,4 +1,7 @@
 <img width="959" alt="assessment3question2withlinkedlistclass" src="https://github.com/user-attachments/assets/c5c0e838-7a52-45e8-bcae-af4bf9f199fe">
+<img width="959" alt="assessment3q1(1of3)" src="https://github.com/user-attachments/assets/4d9523a4-bd55-4e37-a90b-0fb32610b96e">
+<img width="959" alt="assessment3q1(1of2)" src="https://github.com/user-attachments/assets/8bc16d4a-91bb-4d27-8218-301b5e7a08be">
+<img width="959" alt="assessment3q1(1of1)" src="https://github.com/user-attachments/assets/f9be87e5-f7fd-4738-94a0-4048785ab080">
 
 <img width="959" alt="assessment2q2" src="https://github.com/user-attachments/assets/f38b3c04-6178-4b88-b6b2-99e2bb4c9c58">
 ![Screenshot 2024-09-25 173402](https://github.com/user-attachments/assets/6d10d212-6a45-4cd1-ba30-846ebb2581b6)
